@@ -16,15 +16,15 @@ struct ContentView: View {
                     .fontWeight(.heavy)
                     .foregroundColor(Color(red: 0.071, green: 0.398, blue: 0.309))
                     .padding(70)
-                Text("discover the best version of you!")
-                    .font(.subheadline)
+                Text("bloom into your full potential!")
+                    .font(.title2)
                     .fontWeight(.heavy)
                     .foregroundColor(Color(red: 0.071, green: 0.398, blue: 0.309))
             
                 Image("daisy")
-                    .resizable()
+                    .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
-                    .padding(110)
+                    .padding(55)
                 
                 
                 VStack(spacing: 20) {
@@ -45,8 +45,26 @@ struct ContentView: View {
                             .background(Color(red: 0.071, green: 0.398, blue: 0.309))
                             .cornerRadius(100)
                     }
+                    
+                    NavigationLink(destination: Resources()) {
+                        Text("Resources Page")
+                            .foregroundColor(Color(red: 0.937, green: 0.894, blue: 0.812))
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(red: 0.071, green: 0.398, blue: 0.309))
+                            .cornerRadius(100)
+                        
+                   //     Text("This is my root view 🌳")
+                    //    NavigationLink(destination: SecondView()){
+                         //   Text("Click Me!")
+//.navigationTitle("Home!")
+                    }
+                    
+                    
+                    
                 }
-                .padding(.horizontal, 40)
+                .padding(.horizontal, 35.0)
+                .padding(.vertical, 10)
 
                 Spacer()
             }
