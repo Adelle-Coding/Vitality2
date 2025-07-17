@@ -4,8 +4,9 @@
 //
 //  Created by Scholar on 7/16/25.
 //
-
+ 
 import SwiftUI
+
 
 struct ContentView: View {
     var body: some View {
@@ -37,7 +38,7 @@ struct ContentView: View {
                             .cornerRadius(100)
                     }
 
-                    NavigationLink(destination: EncouragementView()) {
+                   NavigationLink(destination: EncouragementView()) {
                         Text("Encouragement")
                             .foregroundColor(Color(red: 0.937, green: 0.894, blue: 0.812))
                             .padding()
@@ -59,7 +60,6 @@ struct ContentView: View {
                          //   Text("Click Me!")
 //.navigationTitle("Home!")
                     }
-                    
                     
                     
                 }
