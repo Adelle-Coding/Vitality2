@@ -37,7 +37,7 @@ struct ContentView: View {
                             .cornerRadius(100)
                     }
 
-                    NavigationLink(destination: Encouragement()) {
+                    NavigationLink(destination: EncouragementView()) {
                         Text("Encouragement")
                             .foregroundColor(Color(red: 0.937, green: 0.894, blue: 0.812))
                             .padding()
