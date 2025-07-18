@@ -16,6 +16,11 @@ struct Resources: View {
                 .foregroundColor(Color(red: 0.34, green: 0.276, blue: 0.251))
             Spacer()
             
+            Image("light")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(55)
+            
             Link("Activities", destination: URL(string: "https://www.healthline.com/health/mind-body/mindfulness-activities")!)
                 .foregroundStyle(Color(red: 0.34, green: 0.276, blue: 0.251))
                 .font(.title2)
